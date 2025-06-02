@@ -16,32 +16,47 @@ import Context2 from "./allTopics/07_context2/Context2";
 import Cart from "./allTopics/07_context2/Cart";
 import InlineCSS from "./allTopics/08_reactCSS/InlineCSS";
 import MyContext from "./allTopics/05_context/MyContext";
+import ParentA from "./allTopics/06_renendering_of_components/ParentA";
+import Card from "./allTopics/08_reactCSS/Card";
+import ControlledForm1 from "./allTopics/09_controlledform/ControlledForm1";
+import TodoWrapper from "./task1/TodoWrapper";
+import UncontrolledForms from "./allTopics/10_uncontrolledForms/UncontrolledForms";
+import UseReducer from "./allTopics/11_useReducer/UseReducer";
+import LifeCycleInFBC from "./allTopics/12_LifeCtcle/LifeCycleInFBC";
 
 const App = () => {
-    
-    return(
-        <div>
-            {/* <Navbar />
+  return (
+    <div>
+      {/* <Navbar />
             <Fbc />
             <Cbc /> */}
-            {/* <StatesinFBC />
+      {/* <StatesinFBC />
             <CounterInFBC /> */}
-            {/* <StatesInCbc /> */}
-            {/* <Parent1 /> */}
-            {/* <Parent2 /> */}
-            {/* <Parent3 /> */}
-            {/* <Parent4 /> */}
-            {/* <Parent5 /> */}
-            {/* <DrillParent1 /> */}
-            {/* <Counter /> */}
-            <Context2>
+      {/* <StatesInCbc /> */}
+      {/* <Parent1 /> */}
+      {/* <Parent2 /> */}
+      {/* <Parent3 /> */}
+      {/* <Parent4 /> */}
+      {/* <Parent5 /> */}
+      {/* <DrillParent1 /> */}
+      {/* <Counter /> */}
+      {/* <Context2>
                 <ParentComponent />
                 <Cart />
-            </Context2>
-            {/* <InlineCSS /> */}
-            {/* <MyContext /> */}
-        </div>
-    );
+            </Context2> */}
+      {/* <InlineCSS /> */}
+      {/* <MyContext /> */}
+      {/* <ParentA /> */}
+      {/* <Card /> */}
+      {/* <ControlledForm1 /> */}
+      {/* <DisplayTodo /> */}
+      {/* <TodoWrapper /> */}
+      {/* <UncontrolledForms /> */}
+      {/* <UseReducer /> */}
+      <LifeCycleInFBC />
+      
+    </div>
+  );
 };
 
 export default App;

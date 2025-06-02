@@ -1,0 +1,7 @@
+#head{
+    background-color:aqua;
+}
+
+#container > p {
+    background-color:yellow;
+}
