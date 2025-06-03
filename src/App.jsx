@@ -23,10 +23,21 @@ import TodoWrapper from "./task1/TodoWrapper";
 import UncontrolledForms from "./allTopics/10_uncontrolledForms/UncontrolledForms";
 import UseReducer from "./allTopics/11_useReducer/UseReducer";
 import LifeCycleInFBC from "./allTopics/12_LifeCtcle/LifeCycleInFBC";
+import LifeCycleInCBC from "./allTopics/12_LifeCtcle/LifeCyclelnCBC";
+import { useState } from "react";
+import FetchApi from "./allTopics/13_fetch/FetchApi";
+import FetchApi2 from "./allTopics/13_fetch/FetchApi2";
+import UseReducer1 from "./allTopics/14_useReducer2/Reducer";
 
 const App = () => {
+  const [toggle, setToggle] = useState(false);
+
+  function toggleHandle() {
+    setToggle(!toggle);
+  }
+
   return (
-    <div>
+    <div className="m-4">
       {/* <Navbar />
             <Fbc />
             <Cbc /> */}
@@ -53,8 +64,22 @@ const App = () => {
       {/* <TodoWrapper /> */}
       {/* <UncontrolledForms /> */}
       {/* <UseReducer /> */}
-      <LifeCycleInFBC />
-      
+
+      {/* <button onClick={toggleHandle} className="bg-amber-300">
+        toggle component
+      </button>
+
+      {toggle ? <LifeCycleInFBC /> : <h1>No component</h1>} */}
+      {/* <FetchApi /> */}
+      <button
+        onClick={toggleHandle}
+        className="bg-red-500 px-2 py-2 mb-3 rounded-md font-bold text-lg"
+      >
+        toggle
+      </button>
+      {toggle ? <FetchApi2 /> : <h1>No Component</h1>}
+
+      {/* <UseReducer1 /> */}
     </div>
   );
 };
