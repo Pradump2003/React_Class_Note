@@ -28,6 +28,10 @@ import { useState } from "react";
 import FetchApi from "./allTopics/13_fetch/FetchApi";
 import FetchApi2 from "./allTopics/13_fetch/FetchApi2";
 import UseReducer1 from "./allTopics/14_useReducer2/Reducer";
+import Reducer from "./allTopics/14_useReducer2/Reducer";
+import MyComponent from "./allTopics/15_memo_and_callback/MyComponent";
+import MyNavbar from "./allTopics/16_browerRouter/MyNavbar";
+import Routing1 from "./allTopics/16_browerRouter/Routing1";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -37,7 +41,7 @@ const App = () => {
   }
 
   return (
-    <div className="m-4">
+    <div>
       {/* <Navbar />
             <Fbc />
             <Cbc /> */}
@@ -71,15 +75,18 @@ const App = () => {
 
       {toggle ? <LifeCycleInFBC /> : <h1>No component</h1>} */}
       {/* <FetchApi /> */}
-      <button
+      {/* <button
         onClick={toggleHandle}
         className="bg-red-500 px-2 py-2 mb-3 rounded-md font-bold text-lg"
       >
         toggle
       </button>
-      {toggle ? <FetchApi2 /> : <h1>No Component</h1>}
+      {toggle ? <FetchApi2 /> : <h1>No Component</h1>} */}
+      {/* <Reducer /> */}
+      {/* <MyComponent /> */}
+      <Routing1 />
 
-      {/* <UseReducer1 /> */}
+      
     </div>
   );
 };
